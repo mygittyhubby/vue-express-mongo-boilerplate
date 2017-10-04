@@ -4,7 +4,7 @@
 
 		.flex.align-center.justify-space-around
 			.left(v-if="enabledNew")
-				button.button.is-primary(@click="newModel")
+				button.button.primary(@click="newModel")
 					i.icon.fa.fa-plus 
 					| {{ schema.resources.addCaption || _("Add") }}
 			.right {{ _("SelectedOfAll", { selected: selected.length, all: rows.length } ) }}
